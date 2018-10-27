@@ -1,6 +1,8 @@
 from scipy.integrate import odeint
 from math import *
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import argparse
 
@@ -33,7 +35,8 @@ def run(n):
     
     plt.figure()
     plt.plot(time, x[:,0])
-    plt.show()
+    plt.savefig('figure.png')
+    # plt.show()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
