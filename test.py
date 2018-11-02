@@ -28,7 +28,7 @@ def calc_alpha_beta(n):
         else:
             b = b * int(i)
     print(a, b)
-    b = str(b)[1:]
+    b = str(b)[-3:]
     print(a, b)
 
 def run(n):
