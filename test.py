@@ -15,6 +15,7 @@ b = 1
 
 def derivative(x, t):
     global a, b
+    b = int(b)
     dx = [ x[1], -b * x[0] - a * x[1] + 1.0 ]
     return dx
 
@@ -26,6 +27,9 @@ def calc_alpha_beta(n):
             pass
         else:
             b = b * int(i)
+    print(a, b)
+    b = str(b)[1:]
+    print(a, b)
 
 def run(n):
     calc_alpha_beta(n)
