@@ -33,7 +33,7 @@ def calc_alpha_beta(n):
 
 def run(n):
     calc_alpha_beta(n)
-    time = np.linspace(0.0, 1.25, 10000)
+    time = np.linspace(0.0, 20.0, 10000)
     x_init = [0.0, 0.0]
     x = odeint(derivative, x_init, time)
     
